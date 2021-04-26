@@ -308,6 +308,259 @@ strong {
 
 /* <---- RESPONSIVE STYLE SECTION ----> */
 
+/* Extra Small devices */
+@media only screen and (max-width: 399px) {
+    #mainHeader {
+        height: 85vh;
+        background-position: center;
+        background-size: 300vw;
+        overflow: visible;
+        position: relative;
+    }
+    #navBar {
+        margin-top: 10%;
+        position: absolute;
+        width: 100%;
+    }
+    #logo-img {
+        width: 23%;
+    }
+    .desktop-nav {
+        display: none;
+    }
+    #mobileNav {
+        margin: auto 0% auto -1.25%;
+        display: none;
+        width: 90%;
+        overflow: visible;
+        position: absolute;
+        height: 80vh;
+        height: auto;
+        top: 10vh;
+        left: 5vw;
+        border-radius: 0.50rem;
+        padding: 2em;
+         z-index: 1;
+        box-shadow: 10px 30px 50px -15px rgba(136, 136, 136, 0.651);
+        background-color: white;
+    }
+    .arrow-link {
+        display: none;
+    }
+    .arrow-dark {
+        display: inline-block;
+        width: 5%;
+        transition: all 0.40s;
+    }
+    .nav-container {
+        margin: 0;
+    }
+    .mobile-menu {
+        display: block;
+        float: right;
+        margin: 5% 0% auto auto;
+    }
+    .mobile-menu:hover {
+        cursor: pointer;
+    }
+    .mobile-hamburger {
+        width: 110%;
+        transition: transform 0.40s, ease-in-out 0.30s;
+    }
+    .mobile-hamburger:hover{
+        transform: scale(1.10);
+    }
+    .close-hamburger {
+        display: none;
+        transition: transform 0.40s, ease-in-out 0.30s;
+    }
+    .close-hamburger:hover{
+        transform: scale(1.20);
+    }   
+    #logo-img {
+        float: none;
+        margin: 2% 50% auto auto;
+    }
+    .nav-button-box {
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: 0%;
+        padding-bottom: 1.50em;
+        border-bottom: 1px solid rgb(207, 207, 207);
+    }
+    .link-buttons {
+        float: none;
+        padding: 1em 1em 1em 1em;
+        display: block;
+        color: hsl(208, 49%, 24%);
+        font-size: 1.50em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    .link-buttons:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    .list {
+        margin: 1% auto auto 0%;
+        text-align: center;
+        font-size: 1.25em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 0.80em 2.50em 0.80em 2.50em;
+        position: relative;
+        border-radius: 0.50rem;
+        background-color: hsl(0, 0%, 93%);
+        z-index: 1;
+        box-shadow: none;
+    }
+      
+    .company-list {margin: 1% 0%;}.connect-list { margin: 1% 0%;}
+    .list > li {
+        padding: 0.80em 0 0.90em 0;
+        opacity: 0.8;
+    }
+    .list > li:hover {
+        opacity: unset;
+    }
+    .signup-right {
+        float: none;
+        width: 100%;
+        margin: 2% 10% auto auto;
+        padding-bottom: 2em;
+    }
+    .loginLink {
+        display: block;
+        padding: 1.25em auto 1.25em auto;
+        margin-bottom: 3%;
+        text-decoration: none;
+        color: hsl(208, 49%, 24%);
+        font-size: 1.50em;
+        font-weight: 600;
+    }
+    .signupLink {
+        background-image: linear-gradient(to left, #ff5353 20%, #f69365 100%);
+        color: white;
+        padding: 1em 2.70em 1em 2.70em;
+        border-radius: 6rem;
+        font-size: 1.50em;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.40s;
+    }
+    .signupLink:hover {
+        background-color: hsl(355, 100%, 74%);
+        color: hsl(0, 0%, 100%);
+    }
+    #header-title {
+        position: absolute;
+        margin: 50% auto auto 0%;
+        text-align: center;
+    }
+    
+    #header-title > h1 {
+        font-size: 2.70em;
+        width: 80%;
+        margin: auto auto 2% auto;
+    }
+    #header-title > p {
+        font-size: 1.40em;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title-link1 {
+        margin: 5% 4% auto auto;
+    }
+    #section-1 {
+        display: grid;
+        place-items: center;
+        height: auto;
+        margin-bottom: 50%;
+    }
+    #section-1 > h1 {
+        font-size: 2em;
+    }
+    .section-article{
+        text-align: center;
+        width: 90%;
+        margin: 10% auto auto auto;
+        float: none;
+        line-height: 2em;
+        color: hsl(207, 13%, 34%);
+        
+    }
+    .section-article > p {
+        width: 85%;
+        margin: auto auto 15% auto;
+    }
+    .section-article > h2 {
+        font-size: 2em;
+    }
+    .section-img1 {
+        display: none;
+    }
+    .section-img-mobile {
+        display: block;
+    }
+    #section-2 {
+        height: auto;
+        padding-bottom: 7em;
+    }
+    .section-article2 {
+        float: none;
+        width: 70%;
+        margin: 5%  auto auto auto ;
+        text-align: center;
+    }
+    .section-article2 > h2{
+        font-size: 2.20em;
+        line-height: 1.50em;
+    }
+    .section-img2 {
+        width: 100%;
+        float: none;
+        margin: -50% auto auto auto;
+    }
+    #section-3 {
+        margin: 15% auto 10% auto;
+        height: auto;
+        text-align: center;
+    }
+    .section-article3 {
+        float: none;
+        width: 100%;
+        margin: 12% auto auto auto;
+    }
+    .section-article3 > p {
+        width: 62%;
+        margin: auto auto 15% auto;
+    }
+    .section-img3 {
+        display: none;
+    }
+    .section-img-mobile3 {
+        display: block;
+    }
+    #main-footer {
+     display: grid;
+     place-items: center;
+     margin: 0%;
+    }
+    .logo-footer {
+        float: none;
+        margin: 0%;
+    }
+    .footer-column {
+     float: none;
+     display: block;
+     margin: 20% 50% auto auto;
+    }
+}
 
 /* MEDIA DEVICES /  Small screen - Iphone & others */
 @media only screen and (max-width: 600px) and (min-width: 400px) {
