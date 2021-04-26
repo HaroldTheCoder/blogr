@@ -311,7 +311,7 @@ strong {
 /* Extra Small devices */
 @media only screen and (max-width: 399px) {
     #mainHeader {
-        height: 85vh;
+        height: 90vh;
         background-position: center;
         background-size: 300vw;
         overflow: visible;
@@ -319,7 +319,7 @@ strong {
         padding: 1em;
     }
     #navBar {
-        margin-top: 10%;
+        margin-top: 7%;
         position: absolute;
         width: 100%;
     }
@@ -459,7 +459,7 @@ strong {
     }
     #header-title {
         position: absolute;
-        margin: 50% auto 5% 0%;
+        margin: 40% auto 5% 0%;
         text-align: center;
     }
     
