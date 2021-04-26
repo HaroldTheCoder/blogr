@@ -465,7 +465,7 @@ strong {
     
     #header-title > h1 {
         font-size: 2.90em;
-        width: 100%;
+        width: 90%;
         margin: auto auto 2% auto;
     }
     #header-title > p {
@@ -475,7 +475,10 @@ strong {
         margin-right: auto;
     }
     .title-link1 {
-        margin: 5% 4% auto auto;
+        margin: 7% 4% auto auto;
+    }
+    .title-link2 {
+        margin-top: 7%;
     }
     #section-1 {
         display: grid;
