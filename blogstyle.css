@@ -335,7 +335,7 @@ strong {
         width: 90%;
         overflow: visible;
         position: absolute;
-        height: 80vh;
+        height: 90vh;
         height: auto;
         top: 10vh;
         left: 5vw;
@@ -459,17 +459,17 @@ strong {
     }
     #header-title {
         position: absolute;
-        margin: 50% auto auto 0%;
+        margin: 50% auto 5% 0%;
         text-align: center;
     }
     
     #header-title > h1 {
-        font-size: 2.20em;
+        font-size: 2.40em;
         width: 75%;
         margin: auto auto 2% auto;
     }
     #header-title > p {
-        font-size: 1.20em;
+        font-size: 1.30em;
         width: 75%;
         margin-left: auto;
         margin-right: auto;
