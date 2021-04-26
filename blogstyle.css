@@ -316,6 +316,7 @@ strong {
         background-size: 300vw;
         overflow: visible;
         position: relative;
+        padding: 1em;
     }
     #navBar {
         margin-top: 10%;
@@ -463,13 +464,13 @@ strong {
     }
     
     #header-title > h1 {
-        font-size: 2.70em;
-        width: 80%;
+        font-size: 2.20em;
+        width: 75%;
         margin: auto auto 2% auto;
     }
     #header-title > p {
-        font-size: 1.40em;
-        width: 80%;
+        font-size: 1.20em;
+        width: 75%;
         margin-left: auto;
         margin-right: auto;
     }
