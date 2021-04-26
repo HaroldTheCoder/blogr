@@ -1,0 +1,1021 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0%;
+    font-family: 'Overpass', sans-serif;
+    display: grid;
+    letter-spacing: 0.80px;
+    grid-template-areas:
+     "header header"
+     "section1 section1"
+     "section2 section2"
+     "section3 section3"
+     "footer footer"
+     "credit credit";
+     grid-template-rows: auto auto auto auto auto auto;
+}
+
+/* HEADER STYLE */
+#mainHeader {
+    grid-area: header;
+    background-image: url(/images/bg-pattern-intro.svg), radial-gradient( hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 155vw;
+    border-bottom-left-radius: 4rem;
+    color: hsl(0, 0%, 100%);
+    height: 70vh;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+/* NAVBAR STYLE */
+#navBar{
+height: auto;
+margin-top: 5%;
+}
+#mobileNav {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+#logo-img {
+    float: left;
+    width: 8%;
+}
+.nav-container {
+    float: left;
+    margin-left: 10%;
+    width: 90%; 
+}
+.list {
+    display: none;
+    list-style-type: none;
+    margin: 1% auto auto 0%;
+    text-align: left;
+    padding: 1em 2.50em 1em 2.50em;
+    position: absolute;
+    border-radius: 0.50rem;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(208, 49%, 24%);
+    z-index: 1;
+    box-shadow: 10px 10px 30px 1px rgba(153, 40, 46, 0.651);
+    animation:  ease 0.20s fadeInAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+.company-list {margin: 1% auto auto 9%;}.connect-list { margin: 1% auto auto 18.50%;}
+.list > li {
+    padding: 0.40em 0 0.40em 0;
+    transition: transform 0.50s;
+}
+
+.list > li:hover {
+    font-weight: 600;
+    cursor: pointer;
+    transform: scale(1.10);
+}
+.nav-button-box {
+    float: left;
+    display: inline;
+    margin: 1.20% auto auto 4%;
+}
+.link-buttons {
+    padding: 0 1.40em 0 1.40em;
+    border: none;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 1.10em;
+}
+.link-buttons:hover {
+    cursor: pointer;
+}
+.arrow-link {
+    transition: all 0.40s;
+}
+.arrow-dark {
+    display: none;
+    width: 5%;
+}
+.signup-right {
+    float: right;
+    width: 20%;
+    margin: 1.60% 10% auto auto;
+}
+.loginLink {
+    padding: 1.60em;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+.loginLink:hover {
+    text-decoration: underline;
+}
+.signupLink {
+    background-color:hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
+    padding: 1em 1.80em 1em 1.80em;
+    border-radius: 6rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.40s;
+}
+.signupLink:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+}
+
+/* TITLE STYLE */
+#header-title{
+    margin-top: 19%;
+}
+#header-title > h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+}
+#header-title > p {
+    display: inline-block;
+    margin-top: none;
+    font-size: 1.10em;
+}
+.title-link1 {
+    margin: 5% 1% auto auto;
+    padding: 1.20em 1.80em 1.20em 1.80em;
+    border-radius: 6rem;
+    text-decoration: none;
+    background-color:hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
+    font-weight: 600;
+    transition: all 0.40s;
+}
+.title-link1:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+}
+.title-link2 {
+    text-decoration: none;
+    padding: 1.20em 1.80em 1.20em 1.80em;
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 6rem;
+    font-weight: 600;
+    transition: all 0.40s;
+}
+.title-link2:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
+}
+
+/* MAIN CONTENT STYLE */
+#section-1 {
+    grid-area: section1;
+    padding: 3em;
+    height: auto;
+    overflow: hidden;
+
+}
+#section-1 > h1 {
+    margin-top: 10%;
+    color: hsl(208, 49%, 24%);
+    font-size: 3em;
+    text-align: center;
+}
+.section-article{
+    text-align: left;
+    width: 40%;
+    margin: 10% auto auto 10%;
+    float: left;
+    line-height: 2em;
+    color: hsl(207, 13%, 34%);
+    
+}
+.section-article > h2 {
+    color: hsl(208, 49%, 24%);
+}
+.section-img1 {
+    width: 70%;
+    float: right;
+    margin-right: -24%;
+    margin-top: -10%;
+}
+.section-img-mobile {
+    display: none;
+}
+#section-2 {
+    grid-area: section2;
+    background-image: url(images/bg-pattern-circles.svg), linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    height: 45vh;
+}
+.section-article2 {
+    float: right;
+    width: 35%;
+    margin: 5%  13% auto auto ;
+    line-height: 2em;
+    color: hsl(240, 2%, 79%);
+
+}
+.section-article2 > h2{
+    font-size: 2.20em;
+    color: hsl(0, 0%, 100%);
+}
+.section-img2 {
+    width: 35%;
+    float: left;
+    margin: -3.50% auto auto 10%;
+}
+#section-3 {
+    grid-area: section3;
+    margin-top: 8%;
+    height: 100vh;
+}
+.section-article3 {
+    float: right;
+    width: 35%;
+    margin: 12% 13% auto auto;
+    line-height: 2em;
+}
+.section-article3 > h2 {
+    color: hsl(208, 49%, 24%);
+}
+.section-article3 > p {
+    margin-bottom: 15%;
+}
+.section-img3 {
+    width: 65%;
+    float: left;
+    margin: 2% auto auto -18.50%;
+}
+.section-img-mobile3 {
+    display: none;
+}
+
+/* FOOTER STYLE */
+#main-footer {
+    grid-area: footer;
+    padding: 3.50em;
+    overflow: hidden;
+    border-top-right-radius: 4rem;
+    background-color: hsl(240, 10%, 16%);
+}
+strong {
+    display: inline-block;
+    padding-bottom: 1em;
+    color: hsl(0, 0%, 100%);
+}
+.logo-footer {
+    float: left;
+    margin: 3% auto auto 10%;
+}
+.footer-column {
+    float: left;
+    width: 10%;
+    margin: 3% auto auto 13%;   
+    
+}
+#main-footer ul {
+    list-style-type: none;
+    padding: 0;
+    color: hsl(240, 2%, 79%);
+}
+.footer-link {
+    padding: 0.50em 0 0.50em 0;
+}
+.footer-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.attribution {
+    grid-area: credit;
+    text-align: center;
+}
+
+
+/* <---- RESPONSIVE STYLE SECTION ----> */
+
+
+/* MEDIA DEVICES /  Small screen - Iphone & others */
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    #mainHeader {
+        height: 85vh;
+        background-position: center;
+        background-size: 300vw;
+        overflow: visible;
+        position: relative;
+    }
+    #navBar {
+        margin-top: 10%;
+        position: absolute;
+        width: 100%;
+    }
+    #logo-img {
+        width: 23%;
+    }
+    .desktop-nav {
+        display: none;
+    }
+    #mobileNav {
+        margin: auto 0% auto -1.25%;
+        display: none;
+        width: 90%;
+        overflow: visible;
+        position: absolute;
+        height: 80vh;
+        height: auto;
+        top: 10vh;
+        left: 5vw;
+        border-radius: 0.50rem;
+        padding: 2em;
+         z-index: 1;
+        box-shadow: 10px 30px 50px -15px rgba(136, 136, 136, 0.651);
+        background-color: white;
+    }
+    .arrow-link {
+        display: none;
+    }
+    .arrow-dark {
+        display: inline-block;
+        width: 5%;
+        transition: all 0.40s;
+    }
+    .nav-container {
+        margin: 0;
+    }
+    .mobile-menu {
+        display: block;
+        float: right;
+        margin: 5% 0% auto auto;
+    }
+    .mobile-menu:hover {
+        cursor: pointer;
+    }
+    .mobile-hamburger {
+        width: 110%;
+        transition: transform 0.40s, ease-in-out 0.30s;
+    }
+    .mobile-hamburger:hover{
+        transform: scale(1.10);
+    }
+    .close-hamburger {
+        display: none;
+        transition: transform 0.40s, ease-in-out 0.30s;
+    }
+    .close-hamburger:hover{
+        transform: scale(1.20);
+    }   
+    #logo-img {
+        float: none;
+        margin: 2% 50% auto auto;
+    }
+    .nav-button-box {
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: 0%;
+        padding-bottom: 1.50em;
+        border-bottom: 1px solid rgb(207, 207, 207);
+    }
+    .link-buttons {
+        float: none;
+        padding: 1em 1em 1em 1em;
+        display: block;
+        color: hsl(208, 49%, 24%);
+        font-size: 1.50em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    .link-buttons:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    .list {
+        margin: 1% auto auto 0%;
+        text-align: center;
+        font-size: 1.25em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 0.80em 2.50em 0.80em 2.50em;
+        position: relative;
+        border-radius: 0.50rem;
+        background-color: hsl(0, 0%, 93%);
+        z-index: 1;
+        box-shadow: none;
+    }
+      
+    .company-list {margin: 1% 0%;}.connect-list { margin: 1% 0%;}
+    .list > li {
+        padding: 0.80em 0 0.90em 0;
+        opacity: 0.8;
+    }
+    .list > li:hover {
+        opacity: unset;
+    }
+    .signup-right {
+        float: none;
+        width: 100%;
+        margin: 2% 10% auto auto;
+        padding-bottom: 2em;
+    }
+    .loginLink {
+        display: block;
+        padding: 1.25em auto 1.25em auto;
+        margin-bottom: 3%;
+        text-decoration: none;
+        color: hsl(208, 49%, 24%);
+        font-size: 1.50em;
+        font-weight: 600;
+    }
+    .signupLink {
+        background-image: linear-gradient(to left, #ff5353 20%, #f69365 100%);
+        color: white;
+        padding: 1em 2.70em 1em 2.70em;
+        border-radius: 6rem;
+        font-size: 1.50em;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.40s;
+    }
+    .signupLink:hover {
+        background-color: hsl(355, 100%, 74%);
+        color: hsl(0, 0%, 100%);
+    }
+    #header-title {
+        position: absolute;
+        margin: 50% auto auto 0%;
+        text-align: center;
+    }
+    
+    #header-title > h1 {
+        font-size: 2.70em;
+        width: 80%;
+        margin: auto auto 2% auto;
+    }
+    #header-title > p {
+        font-size: 1.40em;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title-link1 {
+        margin: 5% 4% auto auto;
+    }
+    #section-1 {
+        display: grid;
+        place-items: center;
+        height: auto;
+        margin-bottom: 50%;
+    }
+    #section-1 > h1 {
+        font-size: 2em;
+    }
+    .section-article{
+        text-align: center;
+        width: 90%;
+        margin: 10% auto auto auto;
+        float: none;
+        line-height: 2em;
+        color: hsl(207, 13%, 34%);
+        
+    }
+    .section-article > p {
+        width: 85%;
+        margin: auto auto 15% auto;
+    }
+    .section-article > h2 {
+        font-size: 2em;
+    }
+    .section-img1 {
+        display: none;
+    }
+    .section-img-mobile {
+        display: block;
+    }
+    #section-2 {
+        height: auto;
+        padding-bottom: 7em;
+    }
+    .section-article2 {
+        float: none;
+        width: 70%;
+        margin: 5%  auto auto auto ;
+        text-align: center;
+    }
+    .section-article2 > h2{
+        font-size: 2.20em;
+        line-height: 1.50em;
+    }
+    .section-img2 {
+        width: 100%;
+        float: none;
+        margin: -50% auto auto auto;
+    }
+    #section-3 {
+        margin: 15% auto 10% auto;
+        height: auto;
+        text-align: center;
+    }
+    .section-article3 {
+        float: none;
+        width: 100%;
+        margin: 12% auto auto auto;
+    }
+    .section-article3 > p {
+        width: 62%;
+        margin: auto auto 15% auto;
+    }
+    .section-img3 {
+        display: none;
+    }
+    .section-img-mobile3 {
+        display: block;
+    }
+    #main-footer {
+     display: grid;
+     place-items: center;
+     margin: 0%;
+    }
+    .logo-footer {
+        float: none;
+        margin: 0%;
+    }
+    .footer-column {
+     float: none;
+     display: block;
+     margin: 20% 50% auto auto;
+    }
+}
+/* MEDIUM DEVICES */
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+    #mainHeader {
+        height: 87vh;
+        background-position: center;
+        background-size: 300vw;
+        overflow: visible;
+        position: relative;
+    }
+    #navBar {
+        margin-top: 8%;
+        position: relative;
+        width: 100%;
+    }
+    .desktop-nav {
+        display: none;
+    }
+    #mobileNav {
+        margin: auto 0% auto -1.25%;
+        display: none;
+        width: 90%;
+        overflow: visible;
+        position: absolute;
+        height: 80vh;
+        height: auto;
+        top: 10vh;
+        left: 5vw;
+        border-radius: 0.50rem;
+        padding: 2em;
+         z-index: 1;
+        box-shadow: 10px 30px 50px -15px rgba(110, 110, 110, 0.651);
+        background-color: white;
+    }
+    .arrow-link {
+        display: none;
+    }
+    .arrow-dark {
+        display: inline-block;
+        width: 3%;
+        transition: all 0.40s;
+    }
+    .nav-container {
+        margin: 0;
+    }
+    .mobile-menu {
+        display: block;
+        float: right;
+        margin: 2% 0% auto auto;
+    }
+    .mobile-hamburger {
+        width: 130%;
+        transition: transform 0.40s, ease-in-out 0.30s;
+    }
+    .mobile-hamburger:hover{
+        transform: scale(1.10);
+    }
+    .close-hamburger {
+        display: none;
+        transition: transform 0.40s, ease-in-out 0.30s;
+    }
+    .close-hamburger:hover{
+        transform: scale(1.20);
+    }
+    .mobile-menu:hover {
+        cursor: pointer;
+    }
+
+    /* .close-hamburger {} TO BE REVIEWD */
+    
+    #logo-img {
+        float: none;
+        margin: 0% 50% auto auto;
+        width: 20%;
+    }
+    .nav-button-box {
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: 0%;
+        padding-bottom: 1.50em;
+        border-bottom: 1px solid rgb(207, 207, 207);
+    }
+    .link-buttons {
+        float: none;
+        padding: 1em 1em 1em 1em;
+        display: block;
+        color: hsl(208, 49%, 24%);
+        font-size: 1.50em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    .link-buttons:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    .list {
+        margin: 1% auto auto 0%;
+        text-align: center;
+        font-size: 1.25em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 0.80em 2.50em 0.80em 2.50em;
+        position: relative;
+        border-radius: 0.50rem;
+        background-color: hsl(0, 0%, 93%);
+        z-index: 1;
+        box-shadow: none;
+    }
+      
+    .company-list {margin: 1% 0%;}.connect-list { margin: 1% 0%;}
+    .list > li {
+        padding: 0.80em 0 0.90em 0;
+        opacity: 0.9;
+    }
+    .list > li:hover {
+        opacity: unset;
+    }
+    .signup-right {
+        float: none;
+        width: 100%;
+        margin: 2% 10% auto auto;
+        padding-bottom: 2em;
+    }
+    .loginLink {
+        display: block;
+        padding: 1.25em auto 1.25em auto;
+        margin-bottom: 3%;
+        text-decoration: none;
+        color: hsl(208, 49%, 24%);
+        font-size: 1.50em;
+        font-weight: 600;
+    }
+    .signupLink {
+        background-image: linear-gradient(to left, #ff5353 20%, #f69365 100%);
+        color: white;
+        padding: 1em 2.70em 1em 2.70em;
+        border-radius: 6rem;
+        font-size: 1.50em;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.40s;
+    }
+    .signupLink:hover {
+        background-color: hsl(355, 100%, 74%);
+        color: hsl(0, 0%, 100%);
+    }
+    #header-title {
+        position: relative;
+        margin: 40% auto auto 0%;
+        text-align: center;
+    }
+    
+    #header-title > h1 {
+        font-size: 2.70em;
+        width: 80%;
+        margin: auto auto 2% auto;
+    }
+    #header-title > p {
+        font-size: 1.40em;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title-link1 {
+        margin: 5% 4% auto auto;
+    }
+    #section-1 {
+        display: grid;
+        place-items: center;
+        height: auto;
+        margin-bottom: 50%;
+    }
+    #section-1 > h1 {
+        font-size: 2em;
+    }
+    .section-article{
+        text-align: center;
+        width: 90%;
+        margin: 10% auto auto auto;
+        float: none;   
+    }
+    .section-article > p {
+        width: 85%;
+        margin: auto auto 15% auto;
+    }
+    .section-article > h2 {
+        font-size: 1.65em;
+    }
+    .section-img1 {
+        display: none;
+    }
+    .section-img-mobile {
+        display: block;
+    }
+    #section-2 {
+        height: auto;
+        padding-bottom: 7em;
+    }
+    .section-article2 {
+        float: none;
+        width: 70%;
+        margin: 5%  auto auto auto ;
+        text-align: center;
+    }
+    .section-article2 > h2{
+        font-size: 2.20em;
+    }
+    .section-img2 {
+        width: 75%;
+        float: none;
+        margin: -40% auto auto 13%;
+    }
+    #section-3 {
+        margin: 15% auto 10% auto;
+        height: auto;
+        text-align: center;
+    }
+    .section-article3 {
+        float: none;
+        width: 100%;
+        margin: 12% auto auto auto;
+    }
+    .section-article3 > p {
+        width: 62%;
+        margin: auto auto 15% auto;
+    }
+    .section-img3 {
+        display: none;
+    }
+    .section-img-mobile3 {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #main-footer {
+     display: grid;
+     place-items: center;
+     margin: 0%;
+    }
+    .logo-footer {
+        float: none;
+        margin: 0%;
+    }
+    .footer-column {
+     float: none;
+     display: block;
+     margin: 20% 48% auto auto;
+    }
+}
+
+/* LARGE DEVICES */
+@media only screen and (min-width: 851px) and (max-width: 1000px) {
+    #mainHeader {
+        height: 89vh;
+        background-position: center;
+        background-size: 300vw;
+        overflow: visible;
+        position: relative;
+    }
+    #navBar {
+        margin-top: 7%;
+    }
+    .nav-button-box {
+        float: none;
+        text-align: center;
+        display: block;
+        width: 65%;
+        margin: 3% auto auto 0%;
+        padding-bottom: 1.50em;
+    }
+    .link-buttons {
+        float: none;
+        padding: 1em 1em 1em 1em;
+        font-size: 1em;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+   .product-list {margin: 1% auto auto 8%;} .company-list {margin: 1% auto auto 24%;}.connect-list { margin: 1% auto auto 37%;}
+
+    #logo-img {
+        width: 17%;
+        margin-left: -7%;
+    }
+    .signup-right {
+        float: right;
+        width: 30%;
+        margin: -6% 0% auto auto;
+    }
+    .loginLink {
+        padding: 1.10em;
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        font-weight: 600;
+    }
+    .loginLink:hover {
+        text-decoration: underline;
+    }
+    .signupLink {
+        background-color:hsl(0, 0%, 100%);
+        color: hsl(353, 100%, 62%);
+        padding: 0.70em 1.10em 0.70em 1.10em;
+        border-radius: 6rem;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.40s;
+    }
+    #header-title {
+        position: relative;
+        margin: 37% auto auto 0%;
+        text-align: center;
+    }
+    #header-title > h1 {
+        font-size: 2.70em;
+        width: 80%;
+        margin: auto auto 2% auto;
+    }
+    #section-1 > h1 {
+        margin-top: 5%;
+    }
+    .section-article{
+        width: 45%; 
+        margin: 0% auto 10% 0%;
+        
+    }
+    .section-img1 {
+        width: 90%;
+        margin-right: -35%;
+        margin-top: -5%;
+    }
+    #section-2 {
+        height: 50vh;
+        padding-bottom: 7em;
+        margin-top: 12%;
+    }
+    .section-article2 {
+        float: right;
+        width: 45%;
+        text-align: left;
+        margin: 5%  2% auto auto ;
+        line-height: 2em;
+        color: hsl(240, 2%, 79%);
+    
+    }
+    .section-img2 {
+        width: 50%;
+        float: left;
+        margin: -20% auto auto auto;
+    }
+    .section-article3 {
+        float: right;
+        width: 40%;
+        margin: 7% 1% auto auto;
+        line-height: 2em;
+    }
+    .section-article3 > p {
+        margin-bottom: 15%;
+    }
+    .section-img3 {
+        width: 75%;
+        float: left;
+        margin: 10% auto auto -21%;
+    }
+}
+
+/* X-LARGE DEVICES */
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+    #mainHeader {
+        height: 89vh;
+        background-position: center;
+        background-size: 300vw;
+        overflow: visible;
+        position: relative;
+    }
+    #navBar {
+        margin-top: 7%;
+    }
+    .nav-button-box {
+        float: none;
+        text-align: center;
+        display: block;
+        width: 65%;
+        margin: 2.50% auto auto 0%;
+        padding-bottom: 1.50em;
+    }
+    .link-buttons {
+        float: none;
+        padding: 1em 1em 1em 1em;
+        font-size: 1em;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+   .product-list {margin: 1% auto auto 13.60%;} .company-list {margin: 1% auto auto 27%;}.connect-list { margin: 1% auto auto 37.80%;}
+
+    #logo-img {
+        width: 15%;
+        margin-left: -2%;
+    }
+    .signup-right {
+        width: 30%;
+        margin: -4.50% 2% auto auto;
+    }
+    .signupLink {
+        padding: 0.90em 1.30em 0.90em 1.30em;
+    }
+    #header-title {
+        position: relative;
+        margin: 30% auto auto 0%;
+    }
+    #header-title > h1 {
+        font-size: 3em;
+        margin: auto auto 2% auto;
+    }
+    #section-1 > h1 {
+        margin-top: 10%;
+    }
+    .section-article{
+        width: 45%; 
+        margin: 10% auto 10% 0%;
+        
+    }
+    .section-article > p {
+        margin-bottom: 15%;
+    }
+    .section-img1 {
+        width: 90%;
+        margin-right: -35%;
+        margin-top: -5%;
+    }
+    #section-2 {
+        height: 50vh;
+        padding-bottom: 7em;
+        margin-top: 12%;
+    }
+    .section-article2 {
+        width: 45%;
+        text-align: left;
+        margin: 5%  2% auto auto ;   
+    }
+    .section-img2 {
+        width: 50%;
+        margin: -20% auto auto auto;
+    }
+    .section-article3 {
+        width: 40%;
+        margin: 7% 6% auto auto;
+    }
+    .section-article3 > p {
+        margin-bottom: 15%;
+    }
+    .section-img3 {
+        width: 75%;
+        margin: 3% auto auto -21%;
+    }
+}
