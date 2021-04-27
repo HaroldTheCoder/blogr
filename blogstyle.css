@@ -329,7 +329,7 @@ strong {
     }
     #logo-img {
         width: 23%;
-        margin-left: -1%;
+        margin-left: -1.50%;
     }
     .desktop-nav {
         display: none;
@@ -364,7 +364,7 @@ strong {
     .mobile-menu {
         display: block;
         float: right;
-        margin: 5% 0% auto auto;
+        margin: 5% 2% auto auto;
     }
     .mobile-menu:hover {
         cursor: pointer;
