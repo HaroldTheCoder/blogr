@@ -312,7 +312,7 @@ strong {
 @media only screen and (max-width: 399px) {
     body {
         display: inline-block;
-        width: 30.20rem;
+        width: 31rem;
     }
     #mainHeader {
         height: 90vh;
