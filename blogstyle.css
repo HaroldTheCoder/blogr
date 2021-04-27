@@ -315,7 +315,7 @@ strong {
         margin: 0% 1% 0% 1%;
     }
     #mainHeader {
-        height: 90rem;
+        height: 90vh;
         background-position: center;
         background-size: 300vw;
         overflow: visible;
@@ -464,7 +464,6 @@ strong {
     #header-title {
         position: absolute;
         margin: 40% auto 5% 0%;
-        padding-bottom: 0.70em;
         text-align: center;
     }
     
