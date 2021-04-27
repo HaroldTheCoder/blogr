@@ -329,6 +329,7 @@ strong {
     }
     #logo-img {
         width: 23%;
+        margin-left: -1%;
     }
     .desktop-nav {
         display: none;
