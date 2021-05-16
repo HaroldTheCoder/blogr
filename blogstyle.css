@@ -20,7 +20,7 @@ body {
 /* HEADER STYLE */
 #mainHeader {
     grid-area: header;
-    background-image: url("/images/bg-pattern-intro.svg"), radial-gradient( hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+    background-image: url("bg-pattern-intro.svg"), radial-gradient( hsl(353, 100%, 62%), hsl(13, 100%, 72%));
     background-position: left;
     background-repeat: no-repeat;
     background-size: 155vw;
